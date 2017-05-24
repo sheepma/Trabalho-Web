@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, min-resolution: 144dpi" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+    <title>Task Manager</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Componente do Menu, tanto do normal como do Mobile....-->
+        <div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper  red lighten-1">
+					<a href="#!" class="brand-logo"><img src="img/logo.png" class="logo-type"></a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li class="active"><a href="index.html">Tarefas</a></li>
+						<li><a href=".html">Components</a></li>
+						<li><a href="collapsible.html">Javascript</a></li>
+						<li><a href="about.html">Sobre</a></li>
+						<li>
+							<a href="#modal1" class="waves-effect waves-light btn-floating user-photo-type" id="user"><img src="img/user.jpg" class="user-photo-type"></a>
+						</li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li>
+							<div class="userView">
+								<div class="background">
+									<img src="img/wallpaper.jpg" class="user-background">
+								</div>
+								<a href="#!user"><img class="circle user-photo-nav-type" src="img/user.jpg"></a>
+								<a href="#!name"><span class="white-text name">Nicolas Gandalf</span></a>
+								<a href="#!email"><span class="white-text email">nicolas_gandalf@gmail.com</span></a>
+							</div>
+						</li>
+
+						<li class="active"><a href="index.html" class="waves-effect waves-yellow">Tarefas</a></li>
+						<li><a href="#!" class="waves-effect waves-yellow">Components</a></li>
+						<li><a href="#!" class="waves-effect waves-yellow">Javascript</a></li>
+						<li><a href="about.html" class="waves-effect waves-yellow">Sobre</a></li>
+					</ul>
+				</div>
+			</nav>
+        </div>
+		<!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Bem vindo Nicolas Gandalf!</h4>
+                <p>nicolas_gandalf@gmail.com</p>
+                <div class="chip">
+                    Você tem novas tarefas para hoje
+                    <i class="close material-icons">close</i>
+                </div>
+                <div class="chip">
+                    Você tem novas mensagens
+                    <i class="close material-icons">close</i>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat">Fechar</a>
+                <a href="#!" class="waves-effect waves-yellow btn yellow darken-2">Perfil</a>
+            </div>
+        </div>
+
+        <!-- Tap Target Structure -->
+        <div class="tap-target yellow darken-2" data-activates="user">
+            <div class="tap-target-content">
+                <h5>Você tem <span class="new badge red darken-3">4</span> novas notificações!</h5>
+                <p>Click na foto do seu usuário para abri-las</p>
+            </div>
+        </div>
+
+    </header>
+    <main>
+		<div class="fixed-action-btn horizontal">
+			<a class="btn-floating btn-large waves-effect waves-light yellow darken-2" href="newCard.html"><i class="material-icons">add</i></a>
+        </div>
+		<div class="row" style="margin-top: 20px">
+            <div class="col s12 m12">
+                <div class="chips chips-initial" id = "cardFilterForm"><i class="material-icons">add</i></div>
+
+            </div>
+        </div>
+        <div class="row grid" id="cardGrid">
+            <div class="col s12 m4 grid-item" id="Matemáticaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper2.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 grid-item" id="Físicaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 grid-item" id = "Quimícaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 grid-item" id = "Matemáticaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper2.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 grid-item" id = "Biologiaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 grid-item" id = "Biologiaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 grid-item" id = "Matemáticaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper2.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 grid-item" id = "Físicaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 grid-item" id = "Informáticaclose">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img src="img/wallpaper.jpg" >
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">file:///C:/Users/Mateus/UFFS/OPT%20I/Trab_I/img/wallpaper.jpg
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer  yellow darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="grey-text text-lighten-3">Mateus Lins Aceto</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="jquery/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="materialize/materialize.js"></script>
+    <script type="text/javascript" src="masonry/masonry.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
