@@ -21,9 +21,8 @@
                 <a href="#!" class="brand-logo"><img src="img/logo.png" class="logo-type"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">Tarefas</a></li>
-                    <li><a href=".html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="newCard.html">Novo Card</a></li>
                     <li><a href="about.html">Sobre</a></li>
                     <li>
                         <a href="#modal1" class="waves-effect waves-light btn-floating user-photo-type" id="user"><img src="img/user.jpg" class="user-photo-type"></a>
@@ -41,9 +40,8 @@
                         </div>
                     </li>
 
-                    <li><a href="index.html" class="waves-effect waves-yellow">Tarefas</a></li>
-                    <li><a href="#!" class="waves-effect waves-yellow">Components</a></li>
-                    <li><a href="#!" class="waves-effect waves-yellow">Javascript</a></li>
+                    <li><a href="index.html" class="waves-effect waves-yellow">Home</a></li>
+                    <li class="active"><a href="newCard.html" class="waves-effect waves-yellow">Novo Card</a></li>                   
                     <li><a href="about.html" class="waves-effect waves-yellow">Sobre</a></li>
                 </ul>
             </div>
@@ -118,8 +116,35 @@
           <textarea id="textarea1" class="materialize-textarea"></textarea>
           <label for="textarea1">Descrição do Card</label>
         </div>
-    
     </form>
+	
+	<form action="#">
+		 <div class="input-field col s12">
+		 <h5 class ="grey-text text-darken-2">Matéria</h5>
+		<p>
+		 <input class="with-gap" name="groupSub" type="radio" id="matSel" checked />
+		  <label for="matSel">Matemática</label>
+		</p>
+		<p>
+		 <input class="with-gap" name="groupSub" type="radio" id="infoSel"  />
+		  <label for="infoSel">Informática</label>
+		</p>
+		<p>
+		 <input class="with-gap" name="groupSub" type="radio" id="fisSel"  />
+		  <label for="fisSel">Física</label>
+		</p>
+		<p>
+		 <input class="with-gap" name="groupSub" type="radio" id="bioSel"  />
+		  <label for="bioSel">Biologia</label>
+		</p>
+		<p>
+		 <input class="with-gap" name="groupSub" type="radio" id="quimSel"  />
+		  <label for="quimSel">Química</label>
+		</p> 
+		</div>
+	</form>
+	
+	
   </div>
   </div>
 				
@@ -151,6 +176,7 @@
     <script type="text/javascript" src="jquery/jquery-2.2.1.js"></script>
     <script type="text/javascript" src="materialize/materialize.js"></script>
     <script type="text/javascript" src="masonry/masonry.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
 </body>
 

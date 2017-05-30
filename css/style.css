@@ -65,7 +65,16 @@ footer{
 }
 
 .btnMax{
-width: 100% !important;
+	width: 100% !important;
+}
+
+.loginCard{
+	display: block;
+    margin: 0 auto;
+	width:100%;
+	height: auto;
+	max-width:500px;
+	margin-top: 7px
 }
 
 

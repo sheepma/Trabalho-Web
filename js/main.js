@@ -7,6 +7,7 @@ $(document).ready(function() {
 	app.materialize();	
 	app.masonry();
 	app.iniCards();
+	app.loginTest();
 	setInterval(function(){
 		app.cardFilter();		
 	}, 100);
@@ -95,6 +96,19 @@ var app =
 				});
 			});
 			$grid.masonry();
+		}
+		
+		self.loginTest = function(){
+			$('#loginSubmit').click(function(){
+				if($('#loginEmail').val() == "nicolas_gandalf@gmail.com" && $('#loginPass').val() == "unicornio123"){
+					window.location.replace("index.html");
+				}
+				else{
+					 Materialize.toast('Email ou senha estão incorretos!', 4000);
+				}
+				
+			})	
+			
 		}
 		
 		
