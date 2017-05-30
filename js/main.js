@@ -14,8 +14,7 @@ $(document).ready(function() {
 		
 	
 });
-	
-	
+
 // Funções
 
 var app = 
@@ -58,6 +57,7 @@ var app =
 			  $(this).attr('id', $(this).text());
 		  })
 		   $('.parallax').parallax();
+		    $('ul.tabs').tabs({swipeable : true});
 			
 		}
 		
@@ -110,6 +110,8 @@ var app =
 			})	
 			
 		}
+		
+		
 		
 		
 		

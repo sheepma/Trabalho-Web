@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, min-resolution: 144dpi" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+    <title>Task Manager</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Componente do Menu, tanto do normal como do Mobile....-->
+         <div class="navbar-fixed">
+		<nav>
+            <div class="nav-wrapper  red lighten-1">
+                <a href="#!" class="brand-logo"><img src="img/logo.png" class="logo-type"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newCard.html">Novo Card</a></li>
+                    <li class="active"><a href="about.html">Sobre</a></li>
+                    <li>
+                        <a href="#modal1" class="waves-effect waves-light btn-floating user-photo-type" id="user"><img src="img/user.jpg" class="user-photo-type"></a>
+					</li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li>
+                        <div class="userView">
+                            <div class="background">
+                                <img src="img/wallpaper.jpg" class="user-background">
+                            </div>
+                            <a href="#!user"><img class="circle user-photo-nav-type" src="img/user.jpg"></a>
+                            <a href="#!name"><span class="white-text name">Nicolas Gandalf</span></a>
+                            <a href="#!email"><span class="white-text email">nicolas_gandalf@gmail.com</span></a>
+                        </div>
+                    </li>
+
+                    <li><a href="index.html" class="waves-effect waves-yellow">Home</a></li>
+                    <li><a href="newCard.html" class="waves-effect waves-yellow">Novo Card</a></li>                   
+                    <li class="active"><a href="about.html" class="waves-effect waves-yellow">Sobre</a></li>
+                </ul>
+            </div>
+        </nav>
+		</div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Bem vindo Nicolas Gandalf!</h4>
+                <p>nicolas_gandalf@gmail.com</p>
+                <div class="chip">
+                    Você tem novas tarefas para hoje
+                    <i class="close material-icons">close</i>
+                </div>
+                <div class="chip">
+                    Você tem novas mensagens
+                    <i class="close material-icons">close</i>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-yellow btn-flat">Fechar</a>
+                <a href="#!" class="waves-effect waves-yellow btn yellow darken-2">Perfil</a>
+            </div>
+        </div>
+
+        <!-- Tap Target Structure -->
+        <div class="tap-target yellow darken-2" data-activates="user">
+            <div class="tap-target-content">
+                <h5>Você tem <span class="new badge red darken-3">4</span> novas notificações!</h5>
+                <p>Click na foto do seu usuário para abri-las</p>
+            </div>
+        </div>
+
+    </header>
+     <main>
+		<div class="row">
+      
+	  <div class="col s12 m12">
+		
+			<div class = "iris">
+				<div class = "card transparent white-text" style="bottom:-350px; margin-left: 10px; max-width: 250px" >
+					<table>
+						<tr>
+							<td><img class="circle user-photo-nav-type" src="img/user.jpg"></td>
+						<td><h5>Nicolas Gandalf</h5><p>nicolas_gandalf@gmail.com</p></td>		
+						</tr>		 
+					</table>
+<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">edit</i></a>					
+				</div>
+			</div>
+		
+	
+	</div>
+      </div>
+     <div class="row">
+        <div class="col s12 m6">
+          <div class="card transparent">
+			   <ul id="tabs-swipe-demo" class="tabs amber grey lighten-4" >
+				<li class="tab col s6"><a class="active" href="#tab-1">Sobre</a></li>
+				<li class="tab col s6"><a href="#tab-2">Amigos</a></li>				
+			  </ul>
+			  <div id="tab-1" class="col s12 white" style="height:1000px !important">aaa</div>
+			  <div id="tab-2" class="col s12 white">
+			   <ul class="collection with-header">
+        <li class="collection-header"><h4>First Names</h4></li>
+        <li class="collection-item"><div>Alvin  <img class="circle user-photo-nav-type" src="img/user.jpg"> <a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+      </ul>
+			  
+			  </div>			
+          </div>
+        </div>
+      </div>
+            
+	
+
+    </main>
+
+    <footer class="page-footer  yellow darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <p class="grey-text text-lighten-3">Mateus Lins Aceto</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="jquery/jquery-2.2.1.js"></script>
+    <script type="text/javascript" src="materialize/materialize.js"></script>
+    <script type="text/javascript" src="masonry/masonry.js"></script>
+	 <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+
+</html>
