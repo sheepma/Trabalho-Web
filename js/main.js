@@ -57,7 +57,7 @@ var app =
 			  $(this).attr('id', $(this).text());
 		  })
 		   $('.parallax').parallax();
-		    $('ul.tabs').tabs({swipeable : true});
+		    $('ul.tabs').tabs();
 			
 		}
 		
